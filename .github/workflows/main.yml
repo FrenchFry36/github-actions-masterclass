@@ -4,7 +4,10 @@ on:
     branches:
       - main
 jobs:
-  name: test
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo "Testing the code"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello, world!"
+          pwd
+          ls -la
